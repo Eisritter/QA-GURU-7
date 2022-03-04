@@ -14,7 +14,7 @@ public class WithAnnotationStepTest {
         browserSize = "1920x1050";
     }
     @AfterEach
-    void closeBrowser() {
+    void closeBrowser() { //8 homework
         Selenide.closeWebDriver();
     }
     @Test
