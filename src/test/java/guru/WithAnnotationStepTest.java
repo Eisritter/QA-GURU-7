@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Configuration.browserSize;
 public class WithAnnotationStepTest {
     @BeforeEach
     void preconditionBrowser() {
-        browserSize = "1920x1060";
+        browserSize = "1920x1050";
     }
     @AfterEach
     void closeBrowser() {
