@@ -13,10 +13,10 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static io.qameta.allure.Allure.step;
 
 public class WithStepTest {
-    private static final String REPOSITORY = "Eisritter/QA-GURU-7";
+    private static final String REPOSITORY = "Eisritter/QA-GURU-7"; //коммент для 8-го урока
 
     @BeforeEach
-    void preconditionBrowser() {
+    void preconditionBrowser() { // еще один коммент для 8-го урока
         browserSize = "1920x1080";
     }
 
@@ -33,7 +33,7 @@ public class WithStepTest {
         step("Открываем репозиторий", () -> {
             $(By.linkText("Eisritter/QA-GURU-7")).click();
         });
-        step("Проверка, что открытой странице есть кнопка 'Issues'", () -> {
+        step("Проверка, что на открытой странице есть кнопка 'Issues'", () -> {
             $(By.partialLinkText("Issues")).should(Condition.visible);
         });
     }
